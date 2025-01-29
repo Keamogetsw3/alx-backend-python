@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-This module defines a type-annotated function `make_multiplier` that takes a 
-floating-point number as an argument and returns a function. 
+This module defines a type-annotated function `make_multiplier` that takes a
+floating-point number as an argument and returns a function.
 
-The returned function takes a float as input and multiplies it by the 
+The returned function takes a float as input and multiplies it by the
 original multiplier.
 """
 
 from typing import Callable
+
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
@@ -17,7 +18,7 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     multiplier (float): The multiplier to be used in the returned function.
 
     Returns:
-    Callable[[float], float]: A function that takes a float and returns 
+    Callable[[float], float]: A function that takes a float and returns
     the result of multiplying it by the multiplier.
     """
     def multiplier_function(value: float) -> float:
