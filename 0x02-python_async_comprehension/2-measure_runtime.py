@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''Module for measuring the execution time of multiple asynchronous tasks.
 
-This module defines a function that runs `async_comprehension` four times 
+This module defines a function that runs `async_comprehension` four times
 concurrently and measures the total execution time for all executions.
 '''
 
@@ -14,9 +14,11 @@ async_comprehension = using('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
-    '''Measures the total execution time for 4 concurrent executions of `async_comprehension`.
+    '''Measures the total execution time for 4 concurrent
+    executions of `async_comprehension`.
 
-    This function runs `async_comprehension()` four times concurrently using `asyncio.gather()`, 
+    This function runs `async_comprehension()`
+    four times concurrently using `asyncio.gather()`,
     and measures the total time taken to complete all executions.
 
     Returns:
