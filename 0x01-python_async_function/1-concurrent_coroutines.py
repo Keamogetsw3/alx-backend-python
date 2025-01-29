@@ -18,7 +18,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     This function concurrently executes `wait_random`
     `n` times with the specified
     `max_delay` and collects the results.
-    The wait times are then sorted in 
+    The wait times are then sorted in
     ascending order.
 
     Args:
