@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 '''Module for measuring execution time of asynchronous tasks.
 
-This module defines a function to compute the average execution time 
+This module defines a function to
+compute the average execution time
 of `wait_n`, which runs multiple asynchronous delays concurrently.
 '''
 
@@ -20,7 +21,8 @@ def measure_time(n: int, max_delay: int) -> float:
 
     Args:
         n (int): The number of times to call `wait_random` concurrently.
-        max_delay (int): The maximum possible delay for each `wait_random` call.
+        max_delay (int): The maximum possible delay for
+        each `wait_random` call.
 
     Returns:
         float: The average execution time per function call.
