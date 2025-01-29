@@ -14,7 +14,7 @@ import random
 async def wait_random(max_delay: int = 10) -> float:
     '''Asynchronously waits for a random duration and returns the wait time.
 
-    The function generates a random floating-point 
+    The function generates a random floating-point
     number between 0 and `max_delay`,
     then awaits for that duration before returning the value.
 
