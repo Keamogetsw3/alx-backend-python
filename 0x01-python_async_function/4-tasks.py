@@ -6,21 +6,16 @@ for executing `wait_random` asynchronously.
 '''
 
 import asyncio
+from typing import List
+
 
 # Importing wait_random from the previous module
-wait_random = __import__('0-basic_async_syntax').wait_random
+task_wait_random = __import__('3-tasks').task_wait_random
 
 
-def task_wait_random(max_delay: int) -> asyncio.Task:
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
     '''Creates and returns an asyncio Task for `wait_random`.
-
-    This function wraps `wait_random(max_delay)` inside an `asyncio.Task`,
-    which allows it to run concurrently with other asynchronous tasks.
-
-    Args:
-        max_delay (int): The maximum delay for the `wait_random` coroutine.
-
-    Returns:
-        asyncio.Task: A task object representing the execution of `wait_random`.
     '''
-    return asyncio.create_task(wait_random(max_delay))
+    wait_times = await asyncio.gather(
+        *tuple(map(lambda _: task_wait_random(max_delay), range(n)))
+    )
