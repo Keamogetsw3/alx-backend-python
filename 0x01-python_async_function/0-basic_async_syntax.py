@@ -17,7 +17,6 @@ async def wait_random(max_delay: int = 10) -> float:
 
     Args:
         max_delay (int, optional): The maximum number of seconds to wait. Defaults to 10.
-
     Returns:
         float: The actual time waited.
     '''
