@@ -5,7 +5,7 @@ floating-point number to its string representation.
 """
 
 
-def to_str(n: float) -> str:
+def to_str(n: float) -> int:
     """
     Convert a floating-point number to its string representation.
 
@@ -13,6 +13,6 @@ def to_str(n: float) -> str:
     n (float): The floating-point number to convert.
 
     Returns:
-    str: The string representation of the input float.
+    int: The string representation of the input float.
     """
-    return str(n)
+    return int(n)
