@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 '''Module for asynchronous number generation.
 
-This module defines an asynchronous generator that yields random 
-floating-point numbers between 0 and 10, with a delay of 1 second between each value.
+This module defines an asynchronous generator that yields random
+floating-point numbers between 0 and 10,
+with a delay of 1 second between each value.
 '''
 
 import asyncio
